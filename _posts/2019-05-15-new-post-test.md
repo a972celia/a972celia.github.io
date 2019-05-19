@@ -4,7 +4,12 @@ cover: 'assets/images/cover6.jpg'
 navigation: True
 title: A Good Test for New Post
 logo: 'assets/images/ghost.png'
+author: celia
+categories: rubbish
+subclass: 'post tag-content'
 ---
+
+<p> hello</p>
 
 
 <div class="system">
@@ -32,13 +37,15 @@ static int var = 123;
 ```
 
 
-## Title
+<h1 id="heading1">Title 1</h1>
+<ul>
+<li>This is item 1</li>
+<li>this is item 2</li>
+<li>Nested list item B</li>
+<li>List Item 3</li>
+</ul>
 
-* this is a list
-* this is another list
 
-
-<strong>hola!</strong>
 
 
 [Google](https://google.com)
