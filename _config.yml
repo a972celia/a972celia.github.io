@@ -15,12 +15,12 @@ description: "A beautiful narrative written with the world's most elegant publis
 # disqus: username
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
 baseurl: https://a972celia.github.io/
-permalink:        /:title/
+
 
 # Permalinks
-# permalink: /:title
-# permalink: /author/:username
-# permalink: /tag/:tag
+
+permalink: /:title
+permalink: /tag/:tag
 
 # gems and other configs
 plugins: [jekyll-paginate]
