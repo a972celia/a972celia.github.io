@@ -36,7 +36,7 @@ Financial fraud still amounts for considerable amounts of money.Hackers and croo
 </ul>
 <h3>Imbalanced Data</h3>
 <ul>
-<p>Data imbalance usually reflects an unequal distribution of classes within a dataset.For example, in a credit card detection dataset, most of the transaction are not fraud and very few classes are fraud transactions.This leaves us with something like 50:1 ration between the fraud and non-fraud classes.</p>
+<p>Data imbalance usually reflects an unequal distribution of classes within a dataset.For example, in a credit card detection dataset, most of the transaction are not fraud and very few classes are fraud transactions.This leaves us with something like 50:1 ratio on between the fraud and non-fraud classes.</p>
 <p>When you are supposed to predict the fraudulent rate based on data from previous years, what would you do?</p>
 <p>The most straightforward way to proceed in this case would be predicting that <strong> 100% of transactions is non-fraud</strong>.<strong>Accuracy</strong> in this case would be 98% when simulating past years. Sounds great, right?</p>
 
