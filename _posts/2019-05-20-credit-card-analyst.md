@@ -16,7 +16,7 @@ categories: Finance
 <p>Fraud is one of the major ethical issues in the credit card industry. For years, fraudsters would simply takes numbers from <strong>credit</strong> or <strong>debit cards</strong> and print them onto blank plastic cards and use at brick-and-mortar stores.
 Nevertheless, <span style="text-decoration:underline;"><a href="https://nilsonreport.com/upload/content_promo/The_Nilson_Report_10-17-2016.pdf">expert predict online credit card soar to</a></span> whopping <strong>$32 billion</strong> in 2025.</p>
 <p>As a result, companies have been investing massive amounts in other technologies for detecting fraudulent transaction.</p>
-<p>Below will present some detection technique.</p>
+<p>Below will present some detection techniques.</p>
 
 </ul>
 
