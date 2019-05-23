@@ -49,12 +49,13 @@ A time series may contain information about general tendency in data, seasonal e
 </blockquote>
 <p>For those with experience with statistics and stochastic, the following will be more formal definition.</p>
 
-<p>Let {Xt} be a stochastic process and </p>
+<p>Let {$X_{t}$} be a stochastic process and </p>
 $$
 F_{X}\left(x_{t_{1}+\tau}, x_{t_{2}+\tau}, \ldots, x_{t_{k}+\tau}\right)
 $$
 
-<p>is the is the cumulative distribution function of the unconditional joint distribution of {Xt}. Then, {Xt} is strictly stationary, if and only if, </p>
+<p>is the is the cumulative distribution function of the unconditional joint distribution of {$
+X_{t}$}. Then, {$X_{t}$} is strictly stationary, if and only if, </p>
 $$F_{X}\left(x_{t_{1}+\tau}, x_{t_{2}+\tau}, \ldots, x_{t_{k}+\tau}\right)=F_{X}\left(x_{t_{1}}, x_{t_{2}}, \ldots, x_{t_{k}}\right)$$
 <p>However, in most applications, we don't manually check for stationarity using stochastic.We use tests for such as Dicky-Fuller and Augmented Dicky-Fuller test. </p>
 <p>There is also a weaker notion of stationarity that is in most cases sufficient to be satisfied. This weak stationarity is defined as the expected value and covariance of the time series does not change over time. </p>
@@ -62,7 +63,8 @@ $$F_{X}\left(x_{t_{1}+\tau}, x_{t_{2}+\tau}, \ldots, x_{t_{k}+\tau}\right)=F_{X}
 
 <h2>Autoregressive Model: AR</h2>
 
-<p>An autoregressive model predicts the response X𝑡 using a linear combination of past values of variable. Parameterised by p,(the number of past values to include).</p>
+<p>An autoregressive model predicts the response $
+X_{t}$ using a linear combination of past values of variable. Parameterised by p,(the number of past values to include).</p>
 $$
 X_{t}=\theta_{0}+\theta_{1} X_{t-1}+\theta_{2} X_{t-2}+\ldots+\theta_{p} X_{t-p}
 $$
@@ -78,7 +80,7 @@ $$
 X_{t}=\beta_{0}+\beta_{1} \epsilon_{t-1}+\beta_{2} \epsilon_{t-2}+\ldots+\beta_{q} \epsilon_{t-q}
 $$
 
-<p>where 𝜖𝑖 is normally distributed white noise (mean zero, variance one). Parameterised by 𝒒, the number of past errors to include. The predictions X𝑡 can be the weighted moving average of past forecast errors. </p>
+<p>where 𝜖𝑖 is normally distributed white noise (mean zero, variance one). Parameterised by 𝒒, the number of past errors to include. The predictions $X_{t}$ can be the weighted moving average of past forecast errors. </p>
 
 
 <p>The MA model looks very similar to the AR model. However, there are a few key differences that one should take note:</p>
@@ -95,7 +97,7 @@ $$
 $$
 <p>Note that now we are regressing on $
 X^{\prime} t $, which is the differenced series $
-X_{t}$. The ordered of difference is determined by the parameter 𝑑. For example, if d = 1: </p>
+X_{t}$. The ordered of difference is determined by the parameter d. For example, if d = 1: </p>
 $$
 X_{t}^{\prime}=\mathrm{X}_{\mathrm{t}}-\mathrm{X}_{\mathrm{t}-1} \text { for } \mathrm{t}=2,3, \ldots, \mathrm{N}
 $$
