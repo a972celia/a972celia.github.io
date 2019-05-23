@@ -28,7 +28,7 @@ The analysis of time series data is an integer part of any data scientist's job,
 A time series may contain information about general tendency in data, seasonal effects, occasional events, and so on. </p>
 <p>Time series decomposition: </p>
 <ul>
-<li><b>Trend</b> - The general (long-term, non-periodic)tendency of time series.These trends will either be <cite>deterministic</cite> or <cite>stochastic</cite>.
+<li><b>Trend</b> - The general (long-term, non-periodic)tendency of time series.These trends will either be <cite>deterministic</cite> or <cite>stochastic</cite>.</li>
 <p><img src="https://user-images.githubusercontent.com/38856953/58217778-df536000-7d36-11e9-84ae-d69753520587.png" /></p>
 <li><b>Seasonal</b> - A seasonal pattern occurs when a time series is affected by seasonal factors such as the time of the year or the day of the week. This is particularly happening in series representing business sales or climate levels.</li>
 <p><img src="https://user-images.githubusercontent.com/38856953/58217816-132e8580-7d37-11e9-9409-a8cc78a9548b.png" /></p>
@@ -75,7 +75,8 @@ $$
 
 <h2>Moving Average Model: MA</h2>
 
-<p>A moving average model predicts the response X𝑡 using a linear combination of past forecast errors.</p>
+<p>A moving average model predicts the response $
+X_{t}$ using a linear combination of past forecast errors.</p>
 $$
 X_{t}=\beta_{0}+\beta_{1} \epsilon_{t-1}+\beta_{2} \epsilon_{t-2}+\ldots+\beta_{q} \epsilon_{t-q}
 $$
