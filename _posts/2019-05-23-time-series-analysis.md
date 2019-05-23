@@ -9,12 +9,14 @@ subclass: 'post tag-content'
 logo: 'assets/images/ghost.png'
 author: Celia
 categories: Finance
+mathjax: true
 ---
-<ul>
+<br>
+<p>
 The analysis of time series data is an integer part of any data scientist's job, more so in the quantitive trading world. Financial data is the most perplexing of time series data and often seems erratic.However, over this article, I will explore some well established theories using for analysing such time series data.
-</ul>
+</p>
 <h2>What is Time series ?</h2>
-<ul>
+
 <p>Examples of time series data include:</p>
 <ul>
 <li>Daily IBM stock prices</li>
@@ -33,13 +35,13 @@ A time series may contain information about general tendency in data, seasonal e
 <li><b>Cyclic</b> - A cycle occurs when the data exhibit rises and falls that are not of a fixed frequency. These fluctuations are usually due to economic conditions, and are often related to the “business cycle”.</li>
 </ul>
 <p>Many people confuse about cyclic behaviour and seasonal behaviour, but they are quite different. If the fluctuations are not of a fixed frequency then they are cyclic; if the frequency is unchanging and associated with some aspect of calendar, then the pattern is seasonal.</p>
-</ul>
-<h2>ARIMA Model</h2>
-<ul>
-The first model we are going to discuss is the ARIMA model. It stands for Auto Regressive Integrated Moving Average model. Yes it's a lot to take in. However, it essentially combines two models, the Auto Regressive model and the Moving Average model, both of which we will elaborate on below. Before that, we need to establish the concept of stationarity, as it is crucial to being able to model and forecast time series correctly.
 
-<h2>Stationarity</h2>
+<h2>ARIMA Model</h2>
+
+<p>The first model we are going to discuss is the ARIMA model. It stands for Auto Regressive Integrated Moving Average model. Yes it's a lot to take in. However, it essentially combines two models, the Auto Regressive model and the Moving Average model, both of which we will elaborate on below. Before that, we need to establish the concept of stationarity, as it is crucial to being able to model and forecast time series correctly.</p>
 <ul>
+<h2>Stationarity</h2>
+
 <p>The concept of stationarity comes from stochastic processes, and sometimes the result of these stochastic process is white noise.The following is a broad definition of stationarity:</p>
 
 <blockquote>
@@ -51,6 +53,7 @@ The first model we are going to discuss is the ARIMA model. It stands for Auto R
 $$
 F_{X}\left(x_{t_{1}+\tau}, x_{t_{2}+\tau}, \ldots, x_{t_{k}+\tau}\right)
 $$
+
 <p>is the is the cumulative distribution function of the unconditional joint distribution of {Xt}. Then, {Xt} is strictly stationary, if and only if, </p>
 $$F_{X}\left(x_{t_{1}+\tau}, x_{t_{2}+\tau}, \ldots, x_{t_{k}+\tau}\right)=F_{X}\left(x_{t_{1}}, x_{t_{2}}, \ldots, x_{t_{k}}\right)$$
 <p>However, in most applications, we don't manually check for stationarity using stochastic.We use tests for such as Dicky-Fuller and Augmented Dicky-Fuller test. </p>
@@ -58,7 +61,7 @@ $$F_{X}\left(x_{t_{1}+\tau}, x_{t_{2}+\tau}, \ldots, x_{t_{k}+\tau}\right)=F_{X}
 </ul>
 </ul>
 <h2>Autoregressive Model: AR</h2>
-<ul>
+
 <p>An autoregressive model predicts the response X𝑡 using a linear combination of past values of variable. Parameterised by 𝓅,(the number of past values to include).</p>
 $$
 X_{t}=\theta_{0}+\theta_{1} X_{t-1}+\theta_{2} X_{t-2}+\ldots+\theta_{p} X_{t-p}
@@ -66,17 +69,17 @@ $$
 <p>This is the same as doing linear regression with lagged features.For example, this is how you would set up a dataset to fit an autoregressive model with 𝓅 = 2 : </p>
 
 <p><img src="https://user-images.githubusercontent.com/38856953/58230591-59034200-7d67-11e9-99b2-d193e18e5511.png" /></p>
-</ul>
+
 
 <h2>Moving Average Model: MA</h2>
-<ul>
+
 <p>A moving average model predicts the response X𝑡 using a linear combination of past forecast errors.</p>
 $$
 X_{t}=\beta_{0}+\beta_{1} \epsilon_{t-1}+\beta_{2} \epsilon_{t-2}+\ldots+\beta_{q} \epsilon_{t-q}
 $$
 
 <p>where 𝜖𝑖 is normally distributed white noise (mean zero, variance one). Parameterised by 𝒒, the number of past errors to include. The predictions X𝑡 can be the weighted moving average of past forecast errors. </p>
-</ul>
+
 
 <p>The MA model looks very similar to the AR model. However, there are a few key differences that one should take note:</p>
 <ol>
