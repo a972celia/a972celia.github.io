@@ -50,24 +50,29 @@ A time series may contain information about general tendency in data, seasonal e
 <p>For those with experience with statistics and stochastic, the following will be more formal definition.</p>
 
 <p>Let {$X_{t}$} be a stochastic process and </p>
+
 $$
 F_{X}\left(x_{t_{1}+\tau}, x_{t_{2}+\tau}, \ldots, x_{t_{k}+\tau}\right)
 $$
 
-<p>is the is the cumulative distribution function of the unconditional joint distribution of {$
-X_{t}$}. Then, {$X_{t}$} is strictly stationary, if and only if, </p>
-$$F_{X}\left(x_{t_{1}+\tau}, x_{t_{2}+\tau}, \ldots, x_{t_{k}+\tau}\right)=F_{X}\left(x_{t_{1}}, x_{t_{2}}, \ldots, x_{t_{k}}\right)$$
+<p>is the is the cumulative distribution function of the unconditional joint distribution of {$X_{t}$}. Then, {$X_{t}$} is strictly stationary, if and only if, </p>
+
+$$
+F_{X}\left(x_{t_{1}+\tau}, x_{t_{2}+\tau}, \ldots, x_{t_{k}+\tau}\right)=F_{X}\left(x_{t_{1}}, x_{t_{2}}, \ldots, x_{t_{k}}\right)
+$$
+
 <p>However, in most applications, we don't manually check for stationarity using stochastic.We use tests for such as Dicky-Fuller and Augmented Dicky-Fuller test. </p>
 <p>There is also a weaker notion of stationarity that is in most cases sufficient to be satisfied. This weak stationarity is defined as the expected value and covariance of the time series does not change over time. </p>
 </ul>
 
 <h2>Autoregressive Model: AR</h2>
 
-<p>An autoregressive model predicts the response $
-X_{t}$ using a linear combination of past values of variable. Parameterised by p,(the number of past values to include).</p>
+<p>An autoregressive model predicts the response $X_{t}$ using a linear combination of past values of variable. Parameterised by p,(the number of past values to include).</p>
+
 $$
 X_{t}=\theta_{0}+\theta_{1} X_{t-1}+\theta_{2} X_{t-2}+\ldots+\theta_{p} X_{t-p}
 $$
+
 <p>This is the same as doing linear regression with lagged features.For example, this is how you would set up a dataset to fit an autoregressive model with p = 2 : </p>
 
 <p><img src="https://user-images.githubusercontent.com/38856953/58230591-59034200-7d67-11e9-99b2-d193e18e5511.png" /></p>
@@ -75,8 +80,8 @@ $$
 
 <h2>Moving Average Model: MA</h2>
 
-<p>A moving average model predicts the response $
-X_{t}$ using a linear combination of past forecast errors.</p>
+<p>A moving average model predicts the response $X_{t}$ using a linear combination of past forecast errors.</p>
+
 $$
 X_{t}=\beta_{0}+\beta_{1} \epsilon_{t-1}+\beta_{2} \epsilon_{t-2}+\ldots+\beta_{q} \epsilon_{t-q}
 $$
@@ -96,12 +101,15 @@ This key differences gives us a natural extension of the model by combining them
 $$
 \begin{aligned} X_{t}^{\prime}=& \theta_{0}+\theta_{1} X_{t-1}+\theta_{2} X_{t-2}+\ldots+\theta_{p} X_{t-p} \\ &+\beta_{0}+\beta_{1} \epsilon_{t-1}+\beta_{2} \epsilon_{t-2}+\ldots+\beta_{q} \epsilon_{t-q} \end{aligned}
 $$
+
 <p>Note that now we are regressing on $
 X^{\prime} t $, which is the differenced series $
 X_{t}$. The ordered of difference is determined by the parameter d. For example, if d = 1: </p>
+
 $$
 X_{t}^{\prime}=\mathrm{X}_{\mathrm{t}}-\mathrm{X}_{\mathrm{t}-1} \text { for } \mathrm{t}=2,3, \ldots, \mathrm{N}
 $$
+
 <p>So the ARIMA model is parameterized by: p (order of the AR part), q (order of the MA part), and d (degree of differencing).</p>
 
 <h2>Implementing an ARIMA model </h2>
