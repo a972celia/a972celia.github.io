@@ -67,7 +67,8 @@ $$
 
 <h2>Autoregressive Model: AR</h2>
 
-<p>An autoregressive model predicts the response $X_{t}$ using a linear combination of past values of variable. Parameterised by p,(the number of past values to include).</p>
+<p>An autoregressive model predicts the response
+$X_{t}$ using a linear combination of past values of variable. Parameterised by p,(the number of past values to include).</p>
 
 $$
 X_{t}=\theta_{0}+\theta_{1} X_{t-1}+\theta_{2} X_{t-2}+\ldots+\theta_{p} X_{t-p}
@@ -112,4 +113,5 @@ $$
 
 <p>So the ARIMA model is parameterized by: p (order of the AR part), q (order of the MA part), and d (degree of differencing).</p>
 
-<h2>Implementing an ARIMA model </h2>
+<h2>Implementing in Python </h2>
+<p>This <a href="https://github.com/a972celia/Data-Analysis-project/blob/master/Time%20series%20analyst/Time%20Series%20Analysis.ipynb">notebook</a> is prepared to be a container of many broad topics in the field of time series analysis.</p>
