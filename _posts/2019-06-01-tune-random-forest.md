@@ -11,6 +11,7 @@ author: Celia
 categories: MachineLearning
 mathjax: false
 ---
+
 <h3>Random Forest</h3>
 <p>Random forest is an ensemble tool which takes a subset of observations and a subset of variation to build a decision tree.It builds multiple such decision tree and amalgamate them together to get a more accurate and stable prediction.This is a direct consequence of the fact that by the maximum voting from a panel of independent judges, we get the final decision better than the best judge.</p>
 <p><img src="https://user-images.githubusercontent.com/38856953/58762593-e6bf0880-8583-11e9-9d2b-fe397c0337e3.png" alt="Small Test Image" /></p>
@@ -54,7 +55,7 @@ mathjax: false
 <p><b>c.oob_score :</b></p>
 <p>This is a random forest cross validation method.It is very similar to leave out validation technique, however, this is so much faster. This method simply tags every observation used in different trees. And then it finds out a maximum vote score for every observation based on only tree which did not use this particular observation to train itself. </p>
 
-<p>Here is a single example of using these parameters in one single function</p>
+<p>Here is a single example of using these parameters in one single function :</p>
 <pre><code>model = RandomForestRegressor(n_estimator = 100, oob_score = TRUE, n_jobs = -1,random_state =50,max_features = "auto", min_samples_leaf = 50)
 </code></pre>
 <pre><code>model.fit(X,y)</code></pre>
