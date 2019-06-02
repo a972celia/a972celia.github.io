@@ -4,23 +4,23 @@ cover: 'assets/images/cover6.jpg'
 navigation: True
 title: How to tune Random Forest model
 date: 2019-06-01 12:00:00
-tags: Machine Learning
+tags: MachineLearning
 subclass: 'post tag-content'
 logo: 'assets/images/ghost.png'
 author: Celia
-categories: Machine Learning
+categories: MachineLearning
 mathjax: false
 ---
 <h3>Random Forest</h3>
 <p>Random forest is an ensemble tool which takes a subset of observations and a subset of variation to build a decision tree.It builds multiple such decision tree and amalgamate them together to get a more accurate and stable prediction.This is a direct consequence of the fact that by the maximum voting from a panel of independent judges, we get the final decision better than the best judge.</p>
-<p><img src="https://user-images.githubusercontent.com/38856953/58747316-26122a00-849c-11e9-834a-da0ec9e09606.png" alt="Small Test Image" /></p>
+<p><img src="https://user-images.githubusercontent.com/38856953/58762593-e6bf0880-8583-11e9-9d2b-fe397c0337e3.png" alt="Small Test Image" /></p>
 
 <p>We general think of random forest as a black box which takes in input and gives out prediction, without worrying too much what calculations are going on the back end.This black box itself have a few levers we can play with.Each of these levers have some effect on either the performance of the model or the resource - time balance. </p>
 
 <h3>Parameters/levers to tune Random Forest</h3>
 <p>Parameters in random forest are either to increase the predictive power of the model or make it easier to train the model.</p>
 <ol><b><li>Feature which make predictions of the model better</li></b>
-<p><img src="https://user-images.githubusercontent.com/38856953/58758483-41d60880-854e-11e9-8be7-df99c9df6850.png"/></p>
+<p><img src="https://user-images.githubusercontent.com/38856953/58762652-8bd9e100-8584-11e9-9fbb-55546e7cc349.png"/></p>
 <p>These are primarily 3 features which can be tuned to improve the predictive model:</p>
 <p><b>a.max_features :</b></p>
 <p>These are the maximum number of features Random Forest is allowed to try in individual tree.There are multiple options available in Python to assign maximum features.Here are a few of them:</p>
@@ -55,8 +55,7 @@ mathjax: false
 <p>This is a random forest cross validation method.It is very similar to leave out validation technique, however, this is so much faster. This method simply tags every observation used in different trees. And then it finds out a maximum vote score for every observation based on only tree which did not use this particular observation to train itself. </p>
 
 <p>Here is a single example of using these parameters in one single function</p>
-<pre><code>model = RandomForestRegressor(n_estimator = 100, oob_score = TRUE, n_jobs = -1,
-        random_state =50,max_features = "auto", min_samples_leaf = 50)
+<pre><code>model = RandomForestRegressor(n_estimator = 100, oob_score = TRUE, n_jobs = -1,random_state =50,max_features = "auto", min_samples_leaf = 50)
 </code></pre>
 <pre><code>model.fit(X,y)</code></pre>
 </ol>
