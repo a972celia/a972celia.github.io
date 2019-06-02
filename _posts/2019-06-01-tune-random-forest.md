@@ -42,11 +42,11 @@ mathjax: false
 <p><b>a.n_jobs :</b></p>
 <p>This parameters tell the engine how many processor.A value of "-1" means there is no restrictions whereas a value of "1" means it can only use one processor.Here is a simple experiment you can do with Python to check this metric:</p>
 <pre><code>%timeit</code></pre>
-<pre><code>model = RandomForestRegressor(n_estimator = 100, oob_score = TRUE,n_jobs = 1,random_state =1)</code></pre>
+<pre><code>model = RandomForestRegressor(n_estimator = 100, oob_score = TRUE,n_jobs = 1,random_state = 1)</code></pre>
 <pre><code>model.fit(X,y)</code></pre>
 <p>Output ---1 loop best of 3 : 1.7 sec per loop</p>
 <pre><code>%timeit</code></pre>
-<pre><code>model = RandomForestRegressor(n_estimator = 100, oob_score = TRUE,n_jobs = -1,random_state =1)</code></pre>
+<pre><code>model = RandomForestRegressor(n_estimator = 100, oob_score = TRUE,n_jobs = -1,random_state = 1)</code></pre>
 <pre><code>model.fit(X,y)</code></pre>
 <p>Output ---1 loop best of 3 : 1.1 sec per loop</p>
 <p>"%timeit" is an awsum function which runs a function multiple times and gives the fastest loop run time.This comes out very handy while scaling up a particular function from prototype to final dataset. </p>
@@ -56,7 +56,7 @@ mathjax: false
 <p>This is a random forest cross validation method.It is very similar to leave out validation technique, however, this is so much faster. This method simply tags every observation used in different trees. And then it finds out a maximum vote score for every observation based on only tree which did not use this particular observation to train itself. </p>
 
 <p>Here is a single example of using these parameters in one single function :</p>
-<pre><code>model = RandomForestRegressor(n_estimator = 100, oob_score = TRUE, n_jobs = -1,random_state =50,max_features = "auto", min_samples_leaf = 50)
+<pre><code>model = RandomForestRegressor(n_estimator = 100, oob_score = TRUE, n_jobs = -1,random_state = 50,max_features = "auto", min_samples_leaf = 50)
 </code></pre>
 <pre><code>model.fit(X,y)</code></pre>
 </ol>
