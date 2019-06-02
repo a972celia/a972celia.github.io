@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'assets/images/cover6.jpg'
+cover: 'assets/images/cover5.jpg'
 navigation: True
 title: How to tune Random Forest model
 date: 2019-06-01 12:00:00
