@@ -33,8 +33,8 @@ categories: MachineLearning
 <p>Then, another model is build, this time using fold 2 as the test set, and the data in folds 1,3,4 and 5 as the training set.</p>
 <p>This process is repeated using the folds 3, 4, and 5 as test sets.For each of these five spilts of the data into training and test set, we computed the accuracy. In the end, we have calculated five accuracy values.</p>
 <p><img src="https://user-images.githubusercontent.com/38856953/60639319-bbfef300-9e54-11e9-94e7-6885f0f475a5.png" ></p>
-{% gist  %}
-<p>[0.96078431 0.92156863 0.95833333]</p>
+
+
 <h3>Stratified K-Fold cross-validation</h3>
 <p>Splitting the dataset into k-folds by starting with the first 1/k-th part of the data as described above might not always be a good idea.</p>
 <pre><code>iris.target</code></pre>
@@ -47,7 +47,5 @@ array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2])
 
 
-{% highlight python %}
-iris.target
-{% endhighlight %}
+
 <p> </p>
