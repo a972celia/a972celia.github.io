@@ -50,4 +50,4 @@ array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 {% highlight python %}
 iris.target
 {% endhighlight %}
-<p>As </p>
+<p> </p>
