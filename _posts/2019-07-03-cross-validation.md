@@ -45,3 +45,5 @@ categories: MachineLearning
 <p>As the classes in the training and test set would be different for all three splits, the three-fold cross-validation accuracy would be zero in this dataset.</p>
 <p>For such problems, a slight variation in k-fold cross-validation is made, such that each fold contains approximately the same percentage of samples of each target as the complete set.This method is known as <b>stratified k-fold </b>. </p>
 <p><img src="https://user-images.githubusercontent.com/38856953/60647553-8e27a780-9e70-11e9-9f4f-1064ca101aab.png" ></p>
+<h3>Leave-One-Out cross-validation</h3>
+<p>Another frequently used cross-validation method is leave-one-out. You can think of leave-one-out cross-validation as k-fold cross-validation where each fold is a single sample. For each split, you pick a single data point to be the test set. This can be very time-consuming, in particular for a large datasets, but sometimes provide better estimates on small datasets. </p>
