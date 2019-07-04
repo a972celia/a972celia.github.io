@@ -11,7 +11,7 @@ author: Celia
 categories: MachineLearning
 
 ---
-
+<br>
 <h3>Cross-validation</h3>
 <p>There is always a need to validate the stability of machine learning model, how well our model generalises to new, unseen data. </p>
 <p>Cross-validation is statistical method to evaluate the generalisation performance in a more stable and thorough way than spilt into training and test set. It's a model validation technique for assessing how the results of a statistical analysis will generalise to an independent data set. It's mainly used in settings where the goal is prediction, and one wants to estimate how accurately a predictive model perform in real world.</p>
@@ -37,7 +37,7 @@ categories: MachineLearning
 
 
 <h3>Stratified K-Fold cross-validation</h3>
-<p>Splitting the dataset into k-folds by starting with the first 1/k-th part of the data as described above might not always be a good idea.</p>
+<p>Splitting the dataset into k-folds by starting with the first 1/k-th part of the data as described above might not always be a good idea.Let’s have a look at the iris dataset for example:</p>
 <pre><code>iris.target</code></pre>
 <p>array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2])</p>
 
@@ -47,3 +47,4 @@ categories: MachineLearning
 <p><img src="https://user-images.githubusercontent.com/38856953/60647553-8e27a780-9e70-11e9-9f4f-1064ca101aab.png" ></p>
 <h3>Leave-One-Out cross-validation</h3>
 <p>Another frequently used cross-validation method is leave-one-out. You can think of leave-one-out cross-validation as k-fold cross-validation where each fold is a single sample. For each split, you pick a single data point to be the test set. This can be very time-consuming, in particular for a large datasets, but sometimes provide better estimates on small datasets. </p>
+<p><img src="https://user-images.githubusercontent.com/38856953/60649126-ff1c8e80-9e73-11e9-8297-4ccb053b789d.png" ></p>
