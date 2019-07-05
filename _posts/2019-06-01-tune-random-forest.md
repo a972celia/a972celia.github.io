@@ -11,7 +11,7 @@ author: Celia
 categories: MachineLearning
 mathjax: false
 ---
-
+<br>
 <h3>Random Forest</h3>
 <p>Random forest is an ensemble tool which takes a subset of observations and a subset of variation to build a decision tree.It builds multiple such decision tree and amalgamate them together to get a more accurate and stable prediction.This is a direct consequence of the fact that by the maximum voting from a panel of independent judges, we get the final decision better than the best judge.</p>
 <p><img src="https://user-images.githubusercontent.com/38856953/58762593-e6bf0880-8583-11e9-9d2b-fe397c0337e3.png" alt="Small Test Image" /></p>
