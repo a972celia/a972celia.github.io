@@ -34,7 +34,7 @@ categories: MachineLearning
 <p>Then, another model is build, this time using fold 2 as the test set, and the data in folds 1,3,4 and 5 as the training set.</p>
 <p>This process is repeated using the folds 3, 4, and 5 as test sets.For each of these five spilts of the data into training and test set, we computed the accuracy. In the end, we have calculated five accuracy values.</p>
 <p><img src="https://user-images.githubusercontent.com/38856953/60639319-bbfef300-9e54-11e9-94e7-6885f0f475a5.png" ></p>
-
+{% gist ee3375d7ed2186c0831ef2add7afe739%}
 
 <h3>Stratified K-Fold cross-validation</h3>
 <p>Splitting the dataset into k-folds by starting with the first 1/k-th part of the data as described above might not always be a good idea.Let’s have a look at the iris dataset for example:</p>
