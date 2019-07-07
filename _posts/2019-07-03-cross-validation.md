@@ -34,7 +34,16 @@ categories: MachineLearning
 <p>Then, another model is build, this time using fold 2 as the test set, and the data in folds 1,3,4 and 5 as the training set.</p>
 <p>This process is repeated using the folds 3, 4, and 5 as test sets.For each of these five spilts of the data into training and test set, we computed the accuracy. In the end, we have calculated five accuracy values.</p>
 <p><img src="https://user-images.githubusercontent.com/38856953/60639319-bbfef300-9e54-11e9-94e7-6885f0f475a5.png" ></p>
+<h4>Implementation in python</h4>
+<p>Cross-validation is implemented in scikit-learn using the cross_val_score function from the model_selection module.
+The parameters of the cross_val_score function are the model we want to evaluate, the training data and the ground-truth labels. Let’s evaluate LogisticRegression on the iris dataset:</p>
 {% gist ee3375d7ed2186c0831ef2add7afe739%}
+<p>[ 0.961 0.922 0.958]</p>
+<p>By default, cross_val_score performs three-fold cross-validation, returning three accuracy values.</p>
+<p>We can change the number of folds used by changing the cv parameter, and a common way to summarize the cross-validation accuracy is to compute the mean:</p>
+{% gist 0d0850ba94f36772d6f6ef76c9ec2abc%}
+<p>array([ 1.   ,  0.967,  0.933,  0.9  ,  1.   ])<br>
+0.96000000000000019</p>
 
 <h3>Stratified K-Fold cross-validation</h3>
 <p>Splitting the dataset into k-folds by starting with the first 1/k-th part of the data as described above might not always be a good idea.Let’s have a look at the iris dataset for example:</p>
