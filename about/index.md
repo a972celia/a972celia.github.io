@@ -10,4 +10,6 @@ This is Celia Kuo personal blog, it contains dummy content which presents my per
 
 I am a data analytics processional with business and finance acumen in mind and 2+ years of experience in data analytics and advanced data driven method!
 
-Feel free to connect with me through [Linkedin](https://www.linkedin.com/in/celiakuo/).
+ 
+<p><b>[Linkedin]</b>(https://www.linkedin.com/in/celiakuo/).</p>
+<p><b>[Github]</b>(https://github.com/a972celia).</p>
