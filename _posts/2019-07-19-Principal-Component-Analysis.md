@@ -12,7 +12,7 @@ categories: MachineLearning
 
 ---
 <br>
-<h2>What is Principal Component Analysis?</h2>
+<h3>What is Principal Component Analysis?</h3>
 <p>Principal component analysis, or PCA, is a method that rotates the dataset in a way such that the rotated features are statistically uncorrelated.This rotation is often followed by a subset of the new features, according to how important they are for explaining the data. In other word, PCA is a dimensionality-reduction method that is often used to reduce the dimensionality of large data sets, by transforming a large set of variables into a smaller one that still contains most of the information in the large set. </p>
 <p>This is easiest to explain by way of example.Here are some triangles in the shape of an oval:</p>
 <p><img src="https://user-images.githubusercontent.com/38856953/61458190-7c7bef00-a99c-11e9-8565-daf961181c91.png" alt="Small Test Image" /></p>
@@ -24,7 +24,7 @@ categories: MachineLearning
 <p>On this line the data is way more spread out, it has a large variance. In fact, there is not a straight line you can draw that has a large variance than a horizontal one. A horizontal line is therefore the principle component here.</p>
 <p>Luckily, we can use math to find principle component rather than drawing lines and unevenly shaped triangles.This is where eigenvectors and eigenvalues come in.</p>
 
-<h2>Eigenvectors and Eigenvalues</h2>
+<h3>Eigenvectors and Eigenvalues</h3>
 <p>Eigenvectors and values exist in pairs : every eigenvector has corresponding eigenvalue. An eigenvector is a direction, in the example above the eigenvector was the direction of the line (vertical, horizontal, 45 degrees etc.) .An eigenvalue is a number, telling you how much variance there is in the data in that direction, in the example above the eigenvalue is a number telling us how spread out the data is on the line. The eigenvector with the highest eigenvalue is therefore the principle component.</p>
 <p>The amount of eigenvectors/values that exist equals the number of dimensions the data set has. The reason for this is that eigenvectors put the data into a new set of dimensions, and these new dimensions have to be equal to the original amount of dimensions. This sounds complicated, but again an example should make it clear.</p>
 <p>Here is the graph of the oval:</p>
@@ -42,7 +42,7 @@ categories: MachineLearning
 <b>Eigenvector</b> with highest eigenvalue = <b>Principal Component</b></p>
 </blockquote>
 <br>
-<h2>Important concept </h2>
+<h3>Important concept </h3>
 <li><b>Variance :</b> measures how far the values of variables are spread out from its mean</li>
 <li><b>Covariance :</b> measures how much two variables change together</li>
 <li><b>Covariance Matrix :</b> a matrix that measures the relationship between multiple variables</li>
@@ -50,7 +50,7 @@ categories: MachineLearning
 <li><b>Matrix decomposition :</b> is a factorization of a matrix into product of matrices.</li>
 <li><b>Eigen decomposition :</b> is the factorization of a matrix into standard form, where its representation is in terms of its <b>eigenvalues</b> and <b>eigenvectors</b>. </li>
 <br>
-<h2>Matrix Decomposition</h2>
+<h3>Matrix Decomposition</h3>
 <p>There are two ways to perform PCA :</p>
 
 <li>Eigen Value Decomposition | Covariance matrix<br>
@@ -70,7 +70,11 @@ categories: MachineLearning
 <li>Singular Value Decomposition</li><br>
 <p>You can break the matrix into three other matrices</p>
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Singular_value_decomposition_visualisation.svg/2000px-Singular_value_decomposition_visualisation.svg.png"/></p>
+<p> EVD & SVD Summary :</p>
+<blockquote>
+  <p>Both approaches will <b>decompose</b> our matrix into
+important vectors (<b>principal components</b>)</p>
+</blockquote>
 
-
-<h2>Application in python</h2>
+<h3>Application in python</h3>
 <p>You can find an application of PCA built in python in <a href="https://github.com/a972celia/Data-Analysis-project/blob/master/Machine%20Learning/Principle%20component%20analysis%20build%20from%20scratch.ipynb">here</a>.</p>
