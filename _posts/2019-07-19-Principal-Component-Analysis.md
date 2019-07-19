@@ -68,8 +68,7 @@ categories: MachineLearning
 </p>
 <br>
 <li>Singular Value Decomposition</li><br>
-<p><img src="https://user-images.githubusercontent.com/38856953/61510455-7f6ef200-aa25-11e9-922a-4732095f9151.png" alt="Small Test Image" /></p>
-
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Singular_value_decomposition_visualisation.svg/2000px-Singular_value_decomposition_visualisation.svg.png"/></p>
 
 
 <h2>Application in python</h2>
