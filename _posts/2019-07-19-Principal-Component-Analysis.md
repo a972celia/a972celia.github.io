@@ -68,6 +68,7 @@ categories: MachineLearning
 </p>
 <br>
 <li>Singular Value Decomposition</li><br>
+<p>You can break the matrix into three other matrices</p>
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Singular_value_decomposition_visualisation.svg/2000px-Singular_value_decomposition_visualisation.svg.png"/></p>
 
 
