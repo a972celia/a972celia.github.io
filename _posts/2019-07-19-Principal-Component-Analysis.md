@@ -41,7 +41,7 @@ categories: MachineLearning
   <p>Total Sample <b>Variance</b> = Sum of <b>Eigenvalues</b><br>
 <b>Eigenvector</b> with highest eigenvalue = <b>Principal Component</b></p>
 </blockquote>
-
+<br>
 <h2>Important concept </h2>
 <li><b>Variance :</b> measures how far the values of variables are spread out from its mean</li>
 <li><b>Covariance :</b> measures how much two variables change together</li>
@@ -49,13 +49,13 @@ categories: MachineLearning
 <li><b>Vectors & Matrices :</b> vector is a 1 x n array, while a matrix can be m x n array.</li>
 <li><b>Matrix decomposition :</b> is a factorization of a matrix into product of matrices.</li>
 <li><b>Eigen decomposition :</b> is the factorization of a matrix into standard form, where its representation is in terms of its <b>eigenvalues</b> and <b>eigenvectors</b>. </li>
-
+<br>
 <h2>Matrix Decomposition</h2>
 <p>There are two ways to perform PCA :</p>
 
 <li>Eigen Value Decomposition | Covariance matrix<br>
 <br>
-<p><img src="https://user-images.githubusercontent.com/38856953/61509832-07073180-aa23-11e9-942a-947e73d872c8.png" " alt="Small Test Image" /></p>
+<p><img src="https://user-images.githubusercontent.com/38856953/61509832-07073180-aa23-11e9-942a-947e73d872c8.png" alt="Small Test Image" /></p>
 <p>the steps of the eigen value decomposition are as followed :
 <ol>
 <li>Center the original data X </li>
@@ -68,7 +68,7 @@ categories: MachineLearning
 </p>
 <br>
 <li>Singular Value Decomposition</li><br>
-<p><img src="https://user-images.githubusercontent.com/38856953/61510455-7f6ef200-aa25-11e9-922a-4732095f9151.png" " alt="Small Test Image" /></p>
+<p><img src="https://user-images.githubusercontent.com/38856953/61510455-7f6ef200-aa25-11e9-922a-4732095f9151.png" alt="Small Test Image" /></p>
 
 
 
