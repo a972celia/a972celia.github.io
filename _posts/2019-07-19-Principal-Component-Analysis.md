@@ -11,6 +11,7 @@ author: Celia
 categories: MachineLearning
 
 ---
+<br>
 <h2>What is Principal Component Analysis?</h2>
 <p>Principal component analysis, or PCA, is a method that rotates the dataset in a way such that the rotated features are statistically uncorrelated.This rotation is often followed by a subset of the new features, according to how important they are for explaining the data. In other word, PCA is a dimensionality-reduction method that is often used to reduce the dimensionality of large data sets, by transforming a large set of variables into a smaller one that still contains most of the information in the large set. </p>
 <p>This is easiest to explain by way of example.Here are some triangles in the shape of an oval:</p>
@@ -50,12 +51,12 @@ categories: MachineLearning
 <li><b>Eigen decomposition :</b> is the factorization of a matrix into standard form, where its representation is in terms of its <b>eigenvalues</b> and <b>eigenvectors</b>. </li>
 
 <h2>Matrix Decomposition</h2>
-<p>There are two ways to perform PCA</p>
-<ul>
+<p>There are two ways to perform PCA :</p>
+
 <li>Eigen Value Decomposition | Covariance matrix<br>
 <br>
-<p><img src="https://user-images.githubusercontent.com/38856953/61509832-07073180-aa23-11e9-942a-947e73d872c8.png" ></p>
-<p>the step of the eigen value decomposition are as followed :
+<p><img src="https://user-images.githubusercontent.com/38856953/61509832-07073180-aa23-11e9-942a-947e73d872c8.png" " alt="Small Test Image" /></p>
+<p>the steps of the eigen value decomposition are as followed :
 <ol>
 <li>Center the original data X </li>
 <li>Calculate the covariance matrix C</li>
@@ -65,11 +66,11 @@ categories: MachineLearning
 <li>Derive the new data set by taking Y =XV</li>
 </ol>
 </p>
-
+<br>
 <li>Singular Value Decomposition</li><br>
-<p><img src="https://user-images.githubusercontent.com/38856953/61510455-7f6ef200-aa25-11e9-922a-4732095f9151.png" ></p>
-</ul>
+<p><img src="https://user-images.githubusercontent.com/38856953/61510455-7f6ef200-aa25-11e9-922a-4732095f9151.png" " alt="Small Test Image" /></p>
+
 
 
 <h2>Application in python</h2>
-You can find an application of PCA built in python in <a href="https://github.com/a972celia/Data-Analysis-project/blob/master/Machine%20Learning/Principle%20component%20analysis%20build%20from%20scratch.ipynb">here</a>.</p>
+<p>You can find an application of PCA built in python in <a href="https://github.com/a972celia/Data-Analysis-project/blob/master/Machine%20Learning/Principle%20component%20analysis%20build%20from%20scratch.ipynb">here</a>.</p>
