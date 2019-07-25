@@ -55,7 +55,7 @@ categories: MachineLearning
 
 <li>Eigen Value Decomposition | Covariance matrix<br>
 <br>
-<p><img src="https://user-images.githubusercontent.com/38856953/61509832-07073180-aa23-11e9-942a-947e73d872c8.png" alt="Small Test Image" /></p>
+<p><img src="https://user-images.githubusercontent.com/38856953/61509832-07073180-aa23-11e9-942a-947e73d872c8.png" width="600" height="200" /></p>
 <p>the steps of the eigen value decomposition are as followed :
 <ol>
 <li>Center the original data X </li>
