@@ -24,13 +24,23 @@ categories: MachineLearning
 <p>This is how the algorithm works:</p>
 <ol>
 <li> K centroids are created randomly (based on the predefined value of K)  </li>
-<li>K-means allocates every data point in the dataset to the nearest centroid(minimizing Euclidean distances between them), meaning that a data point is considered to be in a particular cluster if it is closer to that cluster's centroid than any other centroid. </li>
+<li>K-means allocates every data point in the dataset to the nearest centroid(minimizing <b>Euclidean distances</b> between them), meaning that a data point is considered to be in a particular cluster if it is closer to that cluster's centroid than any other centroid. </li>
+
 <li> Then K-means recalculates the centroids by taking the means of all data points assigned to that centroid's cluster, hence reducing the total intra-cluster variance in relation to the previous step. The "means" in the K-means refers to averaging the data and  finding the new centroid </li>
 
 <li>The algorithm reiterate step 2 and 3 until some criteria is met(e.g. the sum of distances between the data points and their corresponding centroid is minized, a maximum number of iterations is reached, no changes in centroids value or no data points changes clusters.)</li>
+
+
+
 </ol>
+<p><img src="https://user-images.githubusercontent.com/38856953/61853613-ea6d6c80-aeee-11e9-9e18-854f63b6c7dc.gif"/></p>
+
 <p><b>Another critical question exists in K-means is that how do we know the correct number of K ?</b></p>
 <p>There is no universal answer for this.One commonly used approach is testing different numbers of clusters and measure the resulting sum of squared errors, choosing the K value at which an increase will cause a very small decrease in the error sum , while a decrease will sharply increase the error sum. This point that defines the optimal number of clusters is known as "elbow point", and can be used as a visual measure to find the best pick of K.</p>
 <p><img src="https://user-images.githubusercontent.com/38856953/61780108-78385180-ae34-11e9-912a-6ae6400d737f.png"/></p>
 <p><b>But everything has a downside</b></p>
 <p>One of the drawbacks of the K-means is that it relies on random initialization, which means the outcome of the algorithm depends on random seed, results may not be comparable and lack of consistency. By default, scikit-learn runs the algorithm 10 times with 10 different random initializations, and returns the best result. Further downside of K-means are the relatively restrictive assumptions made on the shape of clusters, and the requirement to specify the number of clusters you are looking for(which may not be known in a real-world application).</p>
+
+<h3>Implementation in python</h3>
+
+{% gist a45832d818925f8aa539e9598715b9cd%}
