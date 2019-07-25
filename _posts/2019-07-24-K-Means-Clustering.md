@@ -42,5 +42,5 @@ categories: MachineLearning
 <p>One of the drawbacks of the K-means is that it relies on random initialization, which means the outcome of the algorithm depends on random seed, results may not be comparable and lack of consistency. By default, scikit-learn runs the algorithm 10 times with 10 different random initializations, and returns the best result. Further downside of K-means are the relatively restrictive assumptions made on the shape of clusters, and the requirement to specify the number of clusters you are looking for(which may not be known in a real-world application).</p>
 
 <h3>Implementation in python</h3>
-
+<br>
 {% gist a45832d818925f8aa539e9598715b9cd%}
