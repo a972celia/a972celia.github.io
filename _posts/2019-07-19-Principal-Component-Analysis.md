@@ -69,7 +69,7 @@ categories: MachineLearning
 <br>
 <li>Singular Value Decomposition</li><br>
 <p>You can break the matrix into three other matrices</p>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Singular_value_decomposition_visualisation.svg/2000px-Singular_value_decomposition_visualisation.svg.png"/></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Singular_value_decomposition_visualisation.svg/2000px-Singular_value_decomposition_visualisation.svg.png" width="600" height="700"/></p>
 <p> EVD & SVD Summary :</p>
 <blockquote>
   <p>Both approaches will <b>decompose</b> our matrix into
