@@ -77,4 +77,4 @@ important vectors (<b>principal components</b>)</p>
 </blockquote>
 
 <h3>Application in python</h3>
-<p>You can find an application of PCA built in python in <a href="https://github.com/a972celia/Data-Analysis-project/blob/master/Machine%20Learning/Principle%20component%20analysis%20build%20from%20scratch.ipynb">here</a>.</p>
+<p>You can find an application of PCA built from scratch with python in <a href="https://github.com/a972celia/Data-Analysis-project/blob/master/Machine%20Learning/Principle%20component%20analysis%20build%20from%20scratch.ipynb">here</a>.</p>
