@@ -30,6 +30,16 @@ categories: MachineLearning
 
 <li>The algorithm reiterate step 2 and 3 until some criteria is met(e.g. the sum of distances between the data points and their corresponding centroid is minized, a maximum number of iterations is reached, no changes in centroids value or no data points changes clusters.)</li>
 
+<blockquote>
+  <p> In general, for an n-dimensional space, the Euclidean distance is:  
+
+  $$
+  d(\mathbf{p}, \mathbf{q})=\sqrt{\sum_{i=1}^{n}\left(p_{i}-q_{i}\right)^{2}}
+  $$
+
+  </p>
+</blockquote>
+
 
 
 </ol>
@@ -44,3 +54,6 @@ categories: MachineLearning
 <h3>Implementation in python</h3>
 <br>
 {% gist a45832d818925f8aa539e9598715b9cd%}
+<br>
+
+<p>The overall implementation can be found in this <a href="https://github.com/a972celia/Data-Analysis-project/tree/master/Machine%20Learning/K-Means_Clustering"> github repo.</a></p>
