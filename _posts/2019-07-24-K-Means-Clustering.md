@@ -9,7 +9,7 @@ subclass: 'post tag-content'
 logo: 'assets/images/ghost.png'
 author: Celia
 categories: MachineLearning
-
+mathjax: True
 ---
 <br>
 <h3>Clustering </h3>
