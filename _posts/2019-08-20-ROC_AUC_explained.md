@@ -46,11 +46,11 @@ To put it briefly, ROC is a probability curve and AUC represents the degree or m
 <p>A good model had AUC near to 1 which means it has good measure of separability. A poor model has AUC near to the 0 which means it has worst measure of separability.In fact in means it reciprocating the result. It is predicting 0s as 1s and 1s as 0s. And when AUC is 0.5, it means model has no class separation capacity whatsoever.</p>
 <p>Note: Red distribution curve is of the positive class (patients with disease) and green distribution curve is of negative class(patients with no disease).
 </p>
-<p><img src="https://user-images.githubusercontent.com/38856953/63650951-e5683b00-c782-11e9-802b-051b3dd29ada.png" /></p>
+<p><img src="https://user-images.githubusercontent.com/38856953/63650951-e5683b00-c782-11e9-802b-051b3dd29ada.png"  width="700" /></p>
 <p>This is an ideal situation. When two curves don't overlap at all means model has an ideal measure of separation.</p>
-<p><img src="https://user-images.githubusercontent.com/38856953/63651113-2ca2fb80-c784-11e9-8fc8-0c3d3dfd5281.png" /></p>
+<p><img src="https://user-images.githubusercontent.com/38856953/63651113-2ca2fb80-c784-11e9-8fc8-0c3d3dfd5281.png"  width="700" /></p>
 <p>When two distribution overlap, we introduce type 1 and type 2 error. Depending upon the threshold, we can minimize or maximize then. When AUC is 0.7, it means there is 70 % chance that model will be able to distinguish between positive class and negative class.</p>
-<p><img src="https://user-images.githubusercontent.com/38856953/63651190-d97d7880-c784-11e9-84be-514e62ef8ea2.png" /></p>
+<p><img src="https://user-images.githubusercontent.com/38856953/63651190-d97d7880-c784-11e9-84be-514e62ef8ea2.png"  width="700" /></p>
 <p>This is the worst case. When AUC is approaching 0.5, model has no discrimination capacity to distinguish between positive class and negative class.</p>
-<p><img src="https://user-images.githubusercontent.com/38856953/63651247-57da1a80-c785-11e9-94c0-52076790da7e.png" /></p>
+<p><img src="https://user-images.githubusercontent.com/38856953/63651247-57da1a80-c785-11e9-94c0-52076790da7e.png"  width="700" /></p>
 <p>When AUC is approximately 0, model is actually reciprocating the class. It means model is predicting negative class as positive class and vice versa. </p>
