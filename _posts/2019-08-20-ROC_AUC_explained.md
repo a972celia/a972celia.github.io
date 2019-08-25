@@ -23,7 +23,7 @@ categories: MachineLearning
 
 <h3>What is Confusion Matrix and Why you need it ?</h3>
 <p>A simple way to measure classification performance is to count the proportion of predictions that are correct.At the heart of classification metrics is <i>confusion matrix</i>. It is a performance measurement for machine learning classification problem where output can be two or more classes.It is a table with 4 different combinations of predicted and actual values.</p>
-<p><img src="https://user-images.githubusercontent.com/38856953/63646997-d5823400-c74d-11e9-94cf-956a96a6aa4e.png"/width="700" height="500"></p>
+<p><img src="https://user-images.githubusercontent.com/38856953/63646997-d5823400-c74d-11e9-94cf-956a96a6aa4e.png"width="700" height="500"/></p>
 <p>It is extremely useful for measuring Recall, Precision, Specificity, Accuracy, and most importantly AUC-ROC curve. </p>
 <p>Let’s understand TP, FP, FN, TN:</p>
 
