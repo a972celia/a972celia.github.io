@@ -20,9 +20,9 @@ categories: MachineLearning
 <li><b>Specificity :</b> The percent (or proportion) of 0s correctly</li>
 <li><b>Precision :</b> The percent (or proportion) of predicted 1s that are actually 1s. </li>
 <li><b>ROC curve :</b> A plot of sensitivity versus specificity.</li>
-
+<br>
 <h3>What is Confusion Matrix and Why you need it ?</h3>
-<p>A simple way to measure classification performance is to count the proportion of predictions that are correct.At the heart of classification metrics is <i>confusion matrix</i>. It is a performance measurement for machine learning classification problem where output can be two or more classes.It is a table with 4 different combinations of predicted and actual values.</p>
+<p>A simple way to measure classification performance is to count the proportion of predictions that are correct. At the heart of classification metrics is <i>confusion matrix</i>. It is a performance measurement for machine learning classification problem where output can be two or more classes. It is a table with 4 different combinations of predicted and actual values.</p>
 <p><img src="https://user-images.githubusercontent.com/38856953/63646997-d5823400-c74d-11e9-94cf-956a96a6aa4e.png"  width="700" height="500" /></p>
 <p>It is extremely useful for measuring Recall, Precision, Specificity, Accuracy, and most importantly AUC-ROC curve. </p>
 <p>Let’s understand TP, FP, FN, TN:</p>
@@ -35,7 +35,7 @@ categories: MachineLearning
 <p> You predicted positive and it’s false.</p>
 <p><b>False Negative (Type 2 Error): </b> </p>
 <p> You predicted negative and it’s false.</p>
-
+<br>
 <h3>What is AUC - ROC Curve?</h3>
 <p>In the MachineLearning, performance measurement is an essential task.So when it comes to a classification problem, we can count on AUC-ROC curve.</p>
 <p>The receiver operating characteristic curve, or ROC curve for short, is used to analyze the behaviour of classifiers at different threshold. Similar to the precision-recall curve, the ROC curve considers all possible thresholds for a given classifier, but instead of reporting precision and recall, it shows the <i>false positive rate</i> (FPR) against the <i> true positive rate</i> (TPR). Recall that true positive rate is simply another name for recall, while the false positive rate is the fraction of false positive out of all negative samples.<br>
